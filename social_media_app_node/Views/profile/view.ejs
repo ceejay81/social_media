@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Profile</title>
+</head>
+<body>
+    <h1>Profile</h1>
+    <p>Name: <%= user.name %></p>
+    <p>Email: <%= user.email %></p>
+    <p>Address: <%= user.address %></p>
+    <p>Additional Info: <%= user.info %></p>
+    <% if (user.profilePicture) { %>
+        <img src="<%= user.profilePicture %>" alt="Profile Picture">
+    <% } %>
+    <a href="/profile/edit">Edit Profile</a>
+</body>
+</html>
